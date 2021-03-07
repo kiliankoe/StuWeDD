@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import XCTest
 import EmealKit
 
@@ -83,4 +84,4 @@ class MealTests: XCTestCase {
         XCTAssertEqual(prices2.employees, 1.0)
     }
 }
-
+#endif

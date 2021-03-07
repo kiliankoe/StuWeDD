@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import Foundation
 import XCTest
 import EmealKit
@@ -24,10 +25,11 @@ class CardserviceTests: XCTestCase {
             }
         }
 
-        waitForExpectations(timeout: 5)
+        waitForExpectations(timeout: 10)
     }
 
     static var allTests = [
         ("testLogin", testLogin)
     ]
 }
+#endif
